@@ -26,4 +26,10 @@
 {err}
 	Windows Management Framework 5.1
 	https://www.microsoft.com/en-us/download/details.aspx?id=54616
+7. register github
+	create new repository
+	create new folder on computer
+	on new folder open git bash
+	run every commands from new repository created
+	
 ```
