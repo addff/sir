@@ -34,6 +34,8 @@
 8. before create flutter app
 	flutter doctor
 	flutter doctor --android-licenses
-
+9. create flutter project using cmd/bash
+	flutter create first__app
+	
 	
 ```
