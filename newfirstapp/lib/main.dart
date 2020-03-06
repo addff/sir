@@ -12,29 +12,14 @@ class MyApp extends StatelessWidget {
           title: Text('Senang Jer'),
         ),
         body: Container(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: <Widget>[
-              Column(
-                children: <Widget>[
-                  Icon(Icons.phone),
-                  Container(child: Text('CALL'))
-                ],
-              ),
-              Column(
-                children: <Widget>[
-                  Icon(Icons.navigation),
-                  Container(child: Text('ROUTE'))
-                ],
-              ),
-              Column(
-                children: <Widget>[
-                  Icon(Icons.share),
-                  Container(child: Text('SHARE'))
-                ],
-              ),
-            ],
-          ),
+          child: Center(
+            child: Container(
+              margin: const EdgeInsets.all(10.0),
+              color: Colors.amber[600],
+              width: 48.0,
+              height: 48.0,
+            ),
+          )
         ),
       ),
     );
