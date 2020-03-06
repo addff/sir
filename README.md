@@ -31,5 +31,9 @@
 	create new folder on computer
 	on new folder open git bash
 	run every commands from new repository created
+8. before create flutter app
+	flutter doctor
+	flutter doctor --android-licenses
+
 	
 ```
