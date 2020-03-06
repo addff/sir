@@ -26,4 +26,21 @@
 {err}
 	Windows Management Framework 5.1
 	https://www.microsoft.com/en-us/download/details.aspx?id=54616
+7. register github
+	create new repository
+	create new folder on computer
+	on new folder open git bash
+	run every commands from new repository created
+8. before create flutter app
+	flutter doctor
+	flutter doctor --android-licenses
+9. create flutter project using cmd/bash
+	flutter create newfirstapp
+10. AVD or ADB
+	flutter doctor
+	flutter devices
+	flutter run
+	flutter run -d {id device}
+	
+	
 ```
