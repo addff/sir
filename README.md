@@ -35,7 +35,12 @@
 	flutter doctor
 	flutter doctor --android-licenses
 9. create flutter project using cmd/bash
-	flutter create first__app
+	flutter create newfirstapp
+10. AVD or ADB
+	flutter doctor
+	flutter devices
+	flutter run
+	flutter run -d {id device}
 	
 	
 ```
