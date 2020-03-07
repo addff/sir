@@ -9,13 +9,57 @@ class MyApp extends StatelessWidget {
       title: 'Sir Flutter',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('#1 Widget of the Week'),
+          title: Text('#2 Widget of the Week'),
         ),
-        body: SafeArea(child: ListView(
-          children: List.generate(100, (i) => Text('This is some text')),
+        /*
+        body: Center(
+          child: Column(
+            children: <Widget>[
+              Container(
+                color: Colors.blue,
+                height: 100,
+                width: 100,
+              ),
+              Expanded(
+                child: Container(
+                  color: Colors.amber,
+                  width: 100,
+                ),
+              ),
+              Container(
+                color: Colors.blue,
+                height: 100,
+                width: 100,
+              ),
+            ],
+          ),
         ),
-        top: true, bottom: true, left: false, right: true,
-        )
+        */
+        body: Center(
+          child: Row(
+            children: <Widget>[
+              Expanded(
+                flex: 2,
+                child: Container(
+                  color: Colors.amber,
+                  height: 100,
+                ),
+              ),
+              Container(
+                color: Colors.blue,
+                height: 100,
+                width: 50,
+              ),
+              Expanded(
+                flex: 1,
+                child: Container(
+                  color: Colors.amber,
+                  height: 100,
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
