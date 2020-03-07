@@ -1,39 +1,57 @@
+// Flutter code sample for AnimatedContainer
+
+// The following example (depicted above) transitions an AnimatedContainer
+// between two states. It adjusts the [height], [width], [color], and
+// [alignment] properties when tapped.
+
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
 
+/// This Widget is the main application widget.
 class MyApp extends StatelessWidget {
+  static const String _title = '#4 Widget of the Week';
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Sir Flutter',
+      title: _title,
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('#2 Widget of the Week'),
-        ),
-        body: Center(
-          child: Wrap(
-            spacing: 8.0, // gap between adjacent chips
-            runSpacing: 4.0, // gap between lines
-            children: <Widget>[
-              Chip(
-                avatar: CircleAvatar(backgroundColor: Colors.blue.shade900, child: Text('AH')),
-                label: Text('Hamilton'),
-              ),
-              Chip(
-                avatar: CircleAvatar(backgroundColor: Colors.blue.shade900, child: Text('ML')),
-                label: Text('Lafayette'),
-              ),
-              Chip(
-                avatar: CircleAvatar(backgroundColor: Colors.blue.shade900, child: Text('HM')),
-                label: Text('Mulligan'),
-              ),
-              Chip(
-                avatar: CircleAvatar(backgroundColor: Colors.blue.shade900, child: Text('JL')),
-                label: Text('Laurens'),
-              ),
-            ],
-          )
+        appBar: AppBar(title: const Text(_title)),
+        body: MyStatefulWidget(),
+      ),
+    );
+  }
+}
+
+class MyStatefulWidget extends StatefulWidget {
+  MyStatefulWidget({Key key}) : super(key: key);
+
+  @override
+  _MyStatefulWidgetState createState() => _MyStatefulWidgetState();
+}
+
+class _MyStatefulWidgetState extends State<MyStatefulWidget> {
+  bool selected = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () {
+        setState(() {
+          selected = !selected;
+        });
+      },
+      child: Center(
+        child: AnimatedContainer(
+          width: selected ? 200.0 : 100.0,
+          height: selected ? 100.0 : 200.0,
+          color: selected ? Colors.red : Colors.blue,
+          alignment:
+          selected ? Alignment.center : AlignmentDirectional.topCenter,
+          duration: Duration(seconds: 2),
+          curve: Curves.fastOutSlowIn,
+          child: FlutterLogo(size: 75),
         ),
       ),
     );
