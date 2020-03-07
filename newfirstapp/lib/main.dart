@@ -23,14 +23,14 @@ class MyApp extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.only(bottom: 8),
                   child: Text(
-                    'Oeschinen Lake Campground',
+                    'Tasik Corona',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
                 Text(
-                  'Kandersteg, Switzerland',
+                  'UiTM Cawangan Melaka Kampus Jasin',
                   style: TextStyle(
                     color: Colors.grey[500],
                   ),
@@ -43,7 +43,7 @@ class MyApp extends StatelessWidget {
             Icons.star,
             color: Colors.red[500],
           ),
-          Text('41'),
+          Text('2.6 Billion'),
         ],
       ),
     );
@@ -54,9 +54,9 @@ class MyApp extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          _buildButtonColumn(color, Icons.call, 'CALL'),
-          _buildButtonColumn(color, Icons.near_me, 'ROUTE'),
-          _buildButtonColumn(color, Icons.share, 'SHARE'),
+          _buildButtonColumn(color, Icons.call, 'TALIPON MAI'),
+          _buildButtonColumn(color, Icons.near_me, 'MAI SINI'),
+          _buildButtonColumn(color, Icons.share, 'PAKAT SYER'),
         ],
       ),
     );
@@ -64,13 +64,8 @@ class MyApp extends StatelessWidget {
     Widget textSection = Container(
       padding: const EdgeInsets.all(32),
       child: Text(
-        'Lake Oeschinen lies at the foot of the Blüemlisalp in the Bernese '
-            'Alps. Situated 1,578 meters above sea level, it is one of the '
-            'larger Alpine Lakes. A gondola ride from Kandersteg, followed by a '
-            'half-hour walk through pastures and pine forest, leads you to the '
-            'lake, which warms to 20 degrees Celsius in the summer. Activities '
-            'enjoyed here include rowing, and riding the summer toboggan run.',
-        softWrap: true,
+        'Setakat aku duduk kat kampus ni, dah puas aku round, ronda2 kampus ni. dari main gate kampus sampai ke tasik sampai la ke ladang. Bukan besar mana pun UiTM Jasin ni. Bolehlah kalau nak buat jogging 2 round. Hahaha. Seriously.Kampus ni kan kampus baru, jadi agak panas sebab pokok baru nak hidup, nak membesar, plus ada yg tak nak hidup lansung. Haha! Dalam kampus setakat ni alhamdulillah semua ada. Cukup makan. Groceries dan Stationary pun bnyk. So takde masalah kata takde benda nak makan dan tak sempat nak siapkan assignment diberi, okay?',
+        softWrap: true, textAlign: TextAlign.justify,
       ),
     );
 
@@ -78,14 +73,15 @@ class MyApp extends StatelessWidget {
       title: 'Flutter layout demo',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Copy Paste dari En.Napi'),
+          title: Text('tasik UiTM plak'),
         ),
         body: ListView(
           children: [
             Image.asset(
-              'resources/images/lake.jpg',
-              width: 600,
-              height: 240,
+              //'resources/images/lake.jpg',
+              'images/tasik.jpg',
+              //width: 600,
+              //height: 240,
               fit: BoxFit.cover,
             ),
             titleSection,
