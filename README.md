@@ -79,4 +79,10 @@ body: Container(
 		https://api.flutter.dev/flutter/widgets/Container-class.html
 		48x48 amber square (placed inside a Center)
 			create all six 48x48 square
+16. inserting images
+		put image on new folder name images
+		updating assets in pubspec.yaml
+17. finishing lab4 exercises
+		https://github.com/hanafiah/flutter_lab/blob/lab4-final/lib/main.dart
+
 ```
