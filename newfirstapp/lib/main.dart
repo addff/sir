@@ -12,7 +12,10 @@ class MyApp extends StatelessWidget {
           title: Text('Senang Jer'),
         ),
         body: Container(
-          child: Row(
+            child: Center(
+          child: Wrap(
+            spacing: 8.0, // gap between adjacent chips
+            runSpacing: 4.0, // gap between lines
             children: <Widget>[
               Column(
                 children: <Widget>[
@@ -76,7 +79,7 @@ class MyApp extends StatelessWidget {
               ),
             ],
           ),
-        ),
+        )),
 
         /*
         body: Container(
