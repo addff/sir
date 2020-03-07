@@ -37,10 +37,37 @@
 9. create flutter project using cmd/bash
 	flutter create newfirstapp
 10. AVD or ADB
-	flutter doctor
-	flutter devices
-	flutter run
-	flutter run -d {id device}
-	
-	
+		flutter doctor
+		flutter devices
+		flutter run
+		flutter run -d {id device}
+11. open source code and make some changes
+		lib/main.dart
+		replace "pushed" -> "clicked"
+		color "blue" -> "orange"
+		button "+" -> love symbol
+		++ -> +2
+		"Flutter Demo Homepage" -> Sir Bijak
+12. Hot reload
+----------------------------lab 3 start-----------------------------
+13. create new container
+		{ replacing body }
+
+body: Container(
+	child: Row(
+		children: <Widget>[
+			Column(
+				children: <Widget>[
+					Icon(Icons.phone),
+					Container(
+						child: Text('CALL')
+					)
+				],
+			),
+			Column( ),
+			Column( )
+		],
+	),
+),
+
 ```
