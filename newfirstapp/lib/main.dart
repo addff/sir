@@ -6,93 +6,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Lab 3',
+      title: 'Sir Flutter',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Senang Jer'),
+          title: Text('#1 Widget of the Week'),
         ),
-        body: Container(
-            child: Center(
-          child: Wrap(
-            spacing: 8.0, // gap between adjacent chips
-            runSpacing: 4.0, // gap between lines
-            children: <Widget>[
-              Column(
-                children: <Widget>[
-                  Container(
-                    margin: const EdgeInsets.all(10.0),
-                    color: Colors.purple[600],
-                    width: 48.0,
-                    height: 48.0,
-                  ),
-                ],
-              ),
-              Column(
-                children: <Widget>[
-                  Container(
-                    margin: const EdgeInsets.all(10.0),
-                    color: Colors.blue[600],
-                    width: 48.0,
-                    height: 48.0,
-                  ),
-                ],
-              ),
-              Column(
-                children: <Widget>[
-                  Container(
-                    margin: const EdgeInsets.all(10.0),
-                    color: Colors.orange[600],
-                    width: 48.0,
-                    height: 48.0,
-                  ),
-                ],
-              ),
-              Column(
-                children: <Widget>[
-                  Container(
-                    margin: const EdgeInsets.all(10.0),
-                    color: Colors.amber[600],
-                    width: 48.0,
-                    height: 48.0,
-                  ),
-                ],
-              ),
-              Column(
-                children: <Widget>[
-                  Container(
-                    margin: const EdgeInsets.all(10.0),
-                    color: Colors.lime[600],
-                    width: 48.0,
-                    height: 48.0,
-                  ),
-                ],
-              ),
-              Column(
-                children: <Widget>[
-                  Container(
-                    margin: const EdgeInsets.all(10.0),
-                    color: Colors.green[600],
-                    width: 48.0,
-                    height: 48.0,
-                  ),
-                ],
-              ),
-            ],
-          ),
-        )),
-
-        /*
-        body: Container(
-          child: Center(
-            child: Container(
-              margin: const EdgeInsets.all(10.0),
-              color: Colors.amber[600],
-              width: 48.0,
-              height: 48.0,
-            ),
-          )
+        body: SafeArea(child: ListView(
+          children: List.generate(100, (i) => Text('This is some text')),
         ),
-        */
+        top: true, bottom: true, left: false, right: true,
+        )
       ),
     );
   }
