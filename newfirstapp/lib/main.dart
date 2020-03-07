@@ -11,54 +11,29 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('#2 Widget of the Week'),
         ),
-        /*
         body: Center(
-          child: Column(
+          child: Wrap(
+            spacing: 8.0, // gap between adjacent chips
+            runSpacing: 4.0, // gap between lines
             children: <Widget>[
-              Container(
-                color: Colors.blue,
-                height: 100,
-                width: 100,
+              Chip(
+                avatar: CircleAvatar(backgroundColor: Colors.blue.shade900, child: Text('AH')),
+                label: Text('Hamilton'),
               ),
-              Expanded(
-                child: Container(
-                  color: Colors.amber,
-                  width: 100,
-                ),
+              Chip(
+                avatar: CircleAvatar(backgroundColor: Colors.blue.shade900, child: Text('ML')),
+                label: Text('Lafayette'),
               ),
-              Container(
-                color: Colors.blue,
-                height: 100,
-                width: 100,
+              Chip(
+                avatar: CircleAvatar(backgroundColor: Colors.blue.shade900, child: Text('HM')),
+                label: Text('Mulligan'),
+              ),
+              Chip(
+                avatar: CircleAvatar(backgroundColor: Colors.blue.shade900, child: Text('JL')),
+                label: Text('Laurens'),
               ),
             ],
-          ),
-        ),
-        */
-        body: Center(
-          child: Row(
-            children: <Widget>[
-              Expanded(
-                flex: 2,
-                child: Container(
-                  color: Colors.amber,
-                  height: 100,
-                ),
-              ),
-              Container(
-                color: Colors.blue,
-                height: 100,
-                width: 50,
-              ),
-              Expanded(
-                flex: 1,
-                child: Container(
-                  color: Colors.amber,
-                  height: 100,
-                ),
-              ),
-            ],
-          ),
+          )
         ),
       ),
     );
